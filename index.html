@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch a Brasilrot | Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <div id="intro">
+        <div class="intro-content">
+            <h1>CATCH A BRASILROT</h1>
+            <button id="enter-btn">Entrar no Gerenciador</button>
+        </div>
+    </div>
+
+    <div id="panel" class="hidden">
+        <header class="main-header">
+            <span class="logo">Brasilrot Admin</span>
+            <div class="controls">
+                <button id="toggle-bg"><i class="fas fa-magic"></i> Trocar Interação</button>
+            </div>
+        </header>
+
+        <main class="content-wrapper">
+            <div class="card ban-card">
+                <h3>Gerenciar Banimento</h3>
+                <div class="input-box">
+                    <input type="text" placeholder="ID do Usuário">
+                    <input type="text" placeholder="Motivo">
+                </div>
+                <button class="primary-btn">Banir Agora</button>
+            </div>
+
+            <div class="card announce-card">
+                <h3>Mensagem Global</h3>
+                <textarea placeholder="Escreva o que todos os servidores vão ler..."></textarea>
+                <button class="secondary-btn">Enviar Anúncio</button>
+            </div>
+
+            <div class="card logs-card">
+                <h3>Atividade Recente</h3>
+                <div class="log-list">
+                    <p><span>•</span> Você baniu Player123</p>
+                    <p><span>•</span> Servidor #04 reiniciado</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
